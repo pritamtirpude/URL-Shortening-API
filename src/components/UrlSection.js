@@ -65,7 +65,7 @@ const UrlSection = () => {
           size={15}
         />
       </div>
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter initial={false}>
         {shortLink.map((link, index) => (
           <motion.div
             key={index}
